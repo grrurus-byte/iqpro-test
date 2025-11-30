@@ -1,0 +1,96 @@
+/* Загальні стилі */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  max-width: 700px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+}
+
+p {
+  font-size: 18px;
+  color: #444;
+}
+
+/* Прогрес */
+#progress-text {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Кнопки */
+button {
+  cursor: pointer;
+  padding: 12px 25px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Стартова кнопка */
+#start-btn {
+  background-color: #4CAF50;
+  color: white;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Кнопки варіантів */
+.option-btn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background-color: #2196F3;
+  color: white;
+}
+
+.option-btn:hover {
+  background-color: #1976D2;
+}
+
+/* Кнопка перезапуску */
+#restart-btn {
+  background-color: #FF5722;
+  color: white;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Контейнер для варіантів */
+#options {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Мобільна адаптивність */
+@media (max-width: 500px) {
+  #app {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}
